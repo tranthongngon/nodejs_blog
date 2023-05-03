@@ -2,10 +2,11 @@
   "name": "blog",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --inspect index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --inspect src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass --watch src/scss/ src/assets/css/"
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,12 @@
   },
   "homepage": "https://github.com/tranthongngon/nodejs_blog#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7"
   },
   "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^8.0.0",
     "nodemon": "^2.0.22"
   }
 }
